@@ -15,3 +15,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_TOKEN}}
           heroku_app_name: "secret-github-actions-heroku" #Must be unique in Heroku
           heroku_email: "wegis52409@kaimdr.com"
+        env:
+          ENV_SECRET: ${{secrets.FIREBASE_API_KEY}}
