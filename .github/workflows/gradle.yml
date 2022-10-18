@@ -17,4 +17,4 @@ jobs:
           heroku_app_name: "secret-github-actions-heroku" #Must be unique in Heroku
           heroku_email: "wegis52409@kaimdr.com"
         env:
-          ENV_SECRET: RRR
+          HD_ENV_SECRET: RRR
