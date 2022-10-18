@@ -11,7 +11,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Deploy to heroku using an action
-        uses: akhileshns/heroku-deploy@v3.2.6
+        uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_TOKEN}}
           heroku_app_name: "secret-github-actions-heroku" #Must be unique in Heroku
