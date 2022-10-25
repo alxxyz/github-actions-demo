@@ -8,6 +8,7 @@ runs:
       distribution: 'temurin'
 
   - name: Build
+    shell: bash
     run: ./mvnw --batch-mode clean verify -Pintegration-tests
     
   - name: Save artifact
