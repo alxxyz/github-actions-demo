@@ -1,0 +1,17 @@
+name: 'JB'
+
+runs:
+  steps:
+  - uses: actions/setup-java@v3
+    with:
+      java-version: '11'
+      distribution: 'temurin'
+
+  - name: Build
+    run: ./mvnw --batch-mode clean verify -Pintegration-tests
+    
+  - name: Save artifact
+    uses: actions/upload-artifact@v3
+    with:
+      name: github-actions-demo
+      path: /home/runner/work/github-actions-demo/github-actions-demo/target/
