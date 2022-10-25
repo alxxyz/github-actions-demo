@@ -1,6 +1,7 @@
 name: 'JB'
 
 runs:
+  using: 'composite'
   steps:
   - uses: actions/setup-java@v3
     with:
